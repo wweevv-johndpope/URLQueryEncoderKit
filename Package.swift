@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "URLQueryEncoder",
+    name: "URLQueryEncoderKit",
     platforms: [
         .macOS(.v10_13),
         .iOS(.v11),
@@ -13,15 +13,15 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "URLQueryEncoder",
-            targets: ["URLQueryEncoder"]),
+            name: "URLQueryEncoderKit",
+            targets: ["URLQueryEncoderKit"]),
     ],
     targets: [
         .target(
-            name: "URLQueryEncoder",
+            name: "URLQueryEncoderKit",
             dependencies: []),
         .testTarget(
             name: "URLQueryEncoderTests",
-            dependencies: ["URLQueryEncoder"]),
+            dependencies: ["URLQueryEncoderKit"]),
     ]
 )
